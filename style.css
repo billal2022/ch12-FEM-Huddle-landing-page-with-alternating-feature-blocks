@@ -1,0 +1,211 @@
+@import url(icons.css);
+.icon-messenger:before {
+    content: "\e900";
+    color: #00b2ff;
+    margin: 10px;
+    font-size: 20px;
+  }
+  .icon-mozilla:before {
+    content: "\e901";
+    margin: 10px;
+    font-size: 20px;
+  }
+  .icon-paypal:before {
+    content: "\e902";
+    color: #00457c;
+    margin: 10px;
+    font-size: 20px;
+  }
+  
+:root{
+--Pink: hsl(322, 100%, 66%);
+--Very-Pale-Cyan: hsl(193, 100%, 96%);
+--Very-Dark-Cyan: hsl(192, 100%, 9%);
+--Grayish-Blue: hsl(208, 11%, 55%);
+
+--font-family1: 'Poppins', sans-serif;
+--font-family2: 'Open Sans', sans-serif;
+
+--box-shadow:0px 0px 10px 5px rgba(0, 0, 0, 0.071);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: var(--font-family1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top-container{
+background-image: url(images/bg-hero-desktop.svg);
+background-size: cover;
+background-color: rgba(153, 255, 255, 0.178);
+padding: 40px;
+padding-inline: 70px;
+display: grid;
+grid:auto/1fr 1fr ;
+gap: 50px;
+margin-bottom: 200px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    grid-column:2 span ;
+}
+.header button{
+    width: 190px;
+    padding: 14px 0px;
+    border-radius: 24px;
+    border: 0;
+    background-color: white;
+    font-weight: 700;
+    box-shadow: var(--box-shadow);
+}
+/* right*/
+.right-half{
+    display: flex;
+    flex-direction: column;
+align-items: flex-end;
+gap: 50px;
+}
+.right-half img{
+width: 600px;
+}
+/* left*/
+.left-half{
+    display: grid;
+    gap: 30px;
+}
+.left-half img{
+    width: 150px;
+}
+.left-half h1{
+    margin-top: 90px;
+}
+.left-half p{
+    font-size: 15px;
+    font-family: var(--font-family2);
+    color: var(--Very-Dark-Cyan);
+}
+.left-half button{
+    width: 250px;
+    padding: 17px 30px;
+    border-radius: 24px;
+    border: 0;
+    background-color: var(--Pink);
+    font-weight: 700;
+    box-shadow: var(--box-shadow);
+    color: white;
+}
+/*first box*/
+.middle-container{
+display: flex;
+padding: 50px;
+border-radius: 20px;
+box-shadow:  var(--box-shadow);
+margin: 17px;
+max-width: 1100px;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.046);
+}
+.middle-container img{
+    width: 340px;
+}
+.middle-container h2,.middle-container p{
+    width: 400px;
+    margin-left: 60px;
+
+}
+.middle-container p{
+    color: var(--Grayish-Blue);
+    font-family: var(--font-family2);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+/***/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: var(--Very-Dark-Cyan);
+    height: 550px;
+    width: 100%;
+    gap: 120px;
+    color: var(--Very-Pale-Cyan);
+    font-family: var(--font-family2);
+    font-size: 12px;
+    position: relative;
+    margin-top: 255px;
+    flex-wrap: nowrap;
+    padding-bottom: 160px;
+}
+footer img{
+    background-color: aqua;
+}
+footer .first-f{
+    width: 300px;
+    display: grid;
+    gap: 20px;
+}
+footer .first-f span{
+    font-family: var(--font-family2);
+    line-height: 1.8;
+}
+footer .second-f{
+display: grid;
+gap: 20px   ;
+}
+footer .third-f {
+    display: flex;
+    flex-direction: column;
+  gap: 70px;
+  max-height: 106px;
+}
+footer .third-f p{
+    margin-top: 100px;
+}
+.fk-my-life{
+    position: absolute;
+    width: 541px;
+    background-color: white;
+    text-align: center;
+    padding: 30px 0px;
+top: -70px;
+border-radius: 20px;
+box-shadow: var(--box-shadow);
+}
+.fk-my-life button{
+    max-width: 250px;
+    padding: 17px 30px;
+    background-color: var(--Pink);
+    border: 0;
+    border-radius: 50px;
+    color: white;
+    box-shadow: var(--box-shadow);
+    margin-top: 20px;
+}
+.fk-my-life h2{
+    color: var(--Very-Dark-Cyan);
+
+}
+@media (max-width:800px){
+    body{
+        
+
+    }
+.top-container,.middle-container,button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
+
+}
